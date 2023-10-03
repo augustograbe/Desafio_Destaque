@@ -1,10 +1,11 @@
 # GitHub RepSearch
 Desafio da empresa Destaque para concorrer a uma vaga de estágio.
-
+<details>
 <summary>Desafio</summary>
 <br>
-  ## Criar uma aplicação de busca de repositórios do GitHub <p>Para isso, você deve desenvolver um código em C++ utilizando o Framework Qt . A aplicação deve receber como entrada um termo de consulta e ter como saída a lista de repositórios encontrados no GitHub com a palavra buscada.</p>
-
+  ## Criar uma aplicação de busca de repositórios do GitHub ##
+  <p>Para isso, você deve desenvolver um código em C++ utilizando o Framework Qt . A aplicação deve receber como entrada um termo de consulta e ter como saída a lista de repositórios encontrados no GitHub com a palavra buscada.</p>
+</details>
 <details>
 <summary>Roteiro</summary>
 <br>
