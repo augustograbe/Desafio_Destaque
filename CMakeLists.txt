@@ -21,6 +21,8 @@ qt_add_qml_module(appDesafio_Destaque
     RESOURCES
     assets/search.ico
     assets/github-logo.png
+    assets/star.ico
+    assets/fork.ico
 
     SOURCES repsearch.h repsearch.cpp
     SOURCES repinfo.h repinfo.cpp

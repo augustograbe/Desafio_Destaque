@@ -27,7 +27,7 @@ Window {
         Image {
             anchors {
               left: parent.left
-              leftMargin: 10
+              leftMargin: 20
               verticalCenter: parent.verticalCenter
             }
 
@@ -44,7 +44,7 @@ Window {
 
                 verticalCenter: parent.verticalCenter
                 margins: 10
-                leftMargin: 60
+                leftMargin: 80
             }
 
             height: 30

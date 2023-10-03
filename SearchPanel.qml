@@ -30,7 +30,7 @@ Rectangle {
         required property string repDate
 
         width: listView.width
-        height: 100
+        height: 105
 
         radius: 6
         color: "transparent"
@@ -78,12 +78,12 @@ Rectangle {
 
         Text {
             id: repLanguageblock
-
+            width:60
             anchors {
                 left: parent.left
                 top: repDescriptionblock.top
                 margins: 10
-                topMargin: 20
+                topMargin: 45
             }
 
             text: delegate.repLanguage
@@ -95,39 +95,93 @@ Rectangle {
         }
 
         Text {
-            id: repStarsblock
-            width: 50
+            id: repDateblock
+
+            anchors {
+                right: parent.right
+                top: repDescriptionblock.top
+                margins: 10
+                topMargin: 45
+            }
+
+            text: delegate.repDate
+            color: "gray"
+
+            font {
+                pixelSize: 12
+            }
+        }
+
+        Rectangle {
             anchors {
                 right: parent.right
                 top: parent.top
                 margins: 10
             }
 
-            text: delegate.repStars
-            color: "gray"
+            Row {
 
-            font {
-                pixelSize: 12
+                Text {
+                    id: repStarsblock
+                    //width: 50
+                    anchors {
+                        right: parent.right
+                        top: parent.top
+                    }
+
+                    text: delegate.repStars
+                    color: "gray"
+
+                    font {
+                        pixelSize: 12
+                    }
+                }
+                Image {
+                    anchors {
+                      right: repStarsblock.left
+                      top: parent.top
+                      rightMargin: 5
+                      topMargin: 2
+                    }
+
+                    width: 12
+                    height: 12
+
+                    mipmap: true
+                    source: "assets/star.ico"
+                }
+
+                Text {
+                    id: repForksblock
+                    anchors {
+                        right: parent.right
+                        top: parent.top
+                        rightMargin: 80
+                    }
+
+                    text: delegate.repForks
+                    color: "gray"
+
+                    font {
+                        pixelSize: 12
+                    }
+                }
+                Image {
+                    anchors {
+                      right: repForksblock.left
+                      top: parent.top
+                      rightMargin: 5
+                      topMargin: 2
+                    }
+
+                    width: 12
+                    height: 12
+
+                    mipmap: true
+                    source: "assets/fork.ico"
+                }
             }
         }
-
-        Text {
-            anchors {
-                right: repStarsblock.right
-                top: parent.top
-                margins: 10
-            }
-
-            text: delegate.repForks
-            color: "gray"
-
-            font {
-                pixelSize: 12
-            }
-        }
-
-
-
         MouseArea {
             anchors.fill: parent
 
