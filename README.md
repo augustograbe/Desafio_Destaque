@@ -26,3 +26,4 @@ Desafio da empresa Destaque para concorrer a uma vaga de estágio.
   * Utilização de Signals e Slots 
   * README no Github explicando a aplicação e o passo a passo para build do projeto
 </details>
+![print_RepSearch](https://github.com/augustograbe/Desafio_Destaque/assets/67308025/b4d95bc7-13e3-4ed0-9de5-37dfa58cb04a)
