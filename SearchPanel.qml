@@ -70,6 +70,8 @@ Rectangle {
             text: delegate.repDescription
             color: "white"
             wrapMode: Text.Wrap
+            fontSizeMode: Text.Fit
+            elide: Text.ElideRight
 
             font {
                 pixelSize: 12
