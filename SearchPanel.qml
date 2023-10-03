@@ -19,41 +19,32 @@ Rectangle {
     //visible: !RepSearch.isSearching
 
     delegate: Rectangle {
-      id: delegate
+        id: delegate
 
-      required property string repName
-      required property string repAuthor
-      required property string repDescription
-      required property string repLanguage
-      required property int repStars
-      required property int repForks
-      required property string repDate
+        required property string repName
+        required property string repAuthor
+        required property string repDescription
+        required property string repLanguage
+        required property int repStars
+        required property int repForks
+        required property string repDate
 
-      width: listView.width
-      height: 100
+        width: listView.width
+        height: 100
 
-      radius: 6
-      color: "transparent"
-      border.color: "#89929b"
-      border.width: 1
-
-      Column {
-        anchors {
-            left: parent.left
-            top: parent.top
-
-            margins: 5
-        }
-
-        spacing: 10
+        radius: 6
+        color: "transparent"
+        border.color: "#89929b"
+        border.width: 1
 
         Text {
             id: repNameblock
             width: parent.width
+            height:40
             anchors {
                 left: parent.left
                 top: parent.top
-                margins: 5
+                margins: 10
             }
 
             text: delegate.repAuthor + "/" + delegate.repName
@@ -66,12 +57,13 @@ Rectangle {
         }
 
         Text {
-            width: parent.width
+            id: repDescriptionblock
+            width: parent.width - 10
             height: 60
             anchors {
                 left: parent.left
                 top: repNameblock.top
-                margins: 5
+                margins: 10
                 topMargin: 25
             }
 
@@ -85,43 +77,64 @@ Rectangle {
         }
 
         Text {
-          width: parent.width
+            id: repLanguageblock
 
-          text: delegate.repAuthor
-          color: "gray"
+            anchors {
+                left: parent.left
+                top: repDescriptionblock.top
+                margins: 10
+                topMargin: 20
+            }
 
-          fontSizeMode: Text.Fit
-          minimumPixelSize: 8
-          elide: Text.ElideRight
+            text: delegate.repLanguage
+            color: "gray"
 
-          font {
-            pixelSize: 12
-          }
+            font {
+                pixelSize: 12
+            }
         }
 
         Text {
-          width: parent.width
+            id: repStarsblock
+            width: 50
+            anchors {
+                right: parent.right
+                top: parent.top
+                margins: 10
+            }
 
-          text: delegate.repLanguage
-          color: "gray"
+            text: delegate.repStars
+            color: "gray"
 
-          fontSizeMode: Text.Fit
-          minimumPixelSize: 8
-          elide: Text.ElideRight
-
-          font {
-            pixelSize: 12
-          }
+            font {
+                pixelSize: 12
+            }
         }
-      }
 
-      MouseArea {
-        anchors.fill: parent
+        Text {
+            anchors {
+                right: repStarsblock.right
+                top: parent.top
+                margins: 10
+            }
 
-        onClicked: {
+            text: delegate.repForks
+            color: "gray"
 
+            font {
+                pixelSize: 12
+            }
         }
-      }
+
+
+
+        MouseArea {
+            anchors.fill: parent
+
+            onClicked: {
+
+            }
+        }
     }
   }
 
