@@ -1,12 +1,12 @@
 # GitHub RepSearch
 Desafio da empresa Destaque para concorrer a uma vaga de estágio.
 
-Desafio
-  ## Criar uma aplicação de busca de repositórios do GitHub ##
+### Desafio
+   Criar uma aplicação de busca de repositórios do GitHub 
   <p>Para isso, você deve desenvolver um código em C++ utilizando o Framework Qt . A aplicação deve receber como entrada um termo de consulta e ter como saída a lista de repositórios encontrados no GitHub com a palavra buscada.</p>
 
 
-Roteiro
+### Roteiro
   Você deve fazer uma chamada a API do GitHub (Search) passando o termo para consulta e exibir o resultado como uma lista de repositórios ordenada pelo número de stars em ordem decrescente , com os seguintes dados: 
   * Nome do repositório 
   * Descrição do Repositório 
@@ -17,7 +17,7 @@ Roteiro
   * Data da última atualização
 
 
-Diferenciais
+### Diferenciais
   * Interface gráfica QML (Front-End) para input do termo e output do resultado 
   * Paginação do resultado na interface gráfica 
   * Utilização de Signals e Slots 
